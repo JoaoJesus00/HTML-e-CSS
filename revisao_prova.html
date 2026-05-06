@@ -1,0 +1,156 @@
+<!DOCTYPE html> <!--Informa o tipo de documento-->
+<html> <!--Raiz-->
+<head> <!--Metadados-->
+    <meta charset="UTF-8">
+    <!-- Link externo pra CSS fica aqui-->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title></title>
+    <!-- Interno fica aqui assim: -->
+     <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .fixo {
+            position: fixed;
+        }
+    
+     </style>
+</head>
+<body> <!-- Corpo, onde fica o conteúdo visível-->
+    <!--Títulos-->
+    <h1 class="fixo"></h1>
+    <h1>Título h1</h1>
+    <h2>Título h2</h2>
+    <h6>Título h6 (vai somente até esse)</h6>
+
+    <p id="paragrafo">Parágrafo</p>
+     
+    <a href="exemplo.com">Link com a tag A</a>
+    
+    <a href="#paragrafo">Link de âncora</a>
+    <br><br>
+
+    <img src="módulo 1/uploads/study_person.jpg" alt="Descrição da imagem">
+
+    <h1>Lista ordenada:</h1>
+    <ol>
+        <li>Um</li>
+        <li>Dois</li>
+    </ol>
+
+    <h1>Lista não ordenada</h1>
+    <ul>
+        <li>Um</li>
+        <li>Dois</li>
+    </ul>
+
+    <h1>Lista Descrição</h1>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+    </dl>
+
+    <h1>Tabelas</h1>
+    <table>
+        <thead><tr><th>A</th></tr></thead>
+        <tbody><tr><td>B</td></tr></tbody>
+        <tfoot><tr><td>C</td></tr></tfoot>
+    </table>
+
+    <h1>Iframe</h1>
+    <iframe src="módulo 1/imagens.html"></iframe>
+
+    <h1>Tags semânticas</h1>
+    <pre>
+    <p>
+        • header : cabeçalho
+        • nav : menu
+        • section : seção
+        • article : conteúdo independente
+        • aside : conteúdo lateral
+        • footer : rodapé
+        • figure / figcaption : imagem + legenda
+    </p>
+    </pre>
+
+    <h1>Formulários</h1>
+    <form action="destino.html">
+        <label for="">Nome</label>
+        <input type="text" name="nome">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1>Tipos importantes</h1>
+    <pre>
+    <p>
+    • text
+    • number (min, max, step)
+    • email
+    • tel
+    • url
+    • search
+    • range
+    • checkbox
+    • radio
+    • select + option
+    </p>
+    </pre>
+
+    <h1>Seletores CSS:</h1>
+    <pre>
+        <p>
+    • Elemento → p { }
+    • Classe → .classe { }
+    • ID → #id { }
+    • Agrupamento → h1, p { }
+    • Descendente → div p
+    • Filho → div > p
+    • Irmão adjacente → h1 + p
+    • Irmão geral → h1 ~ p
+    • Atributo → input[type="text"]
+        </p>
+    </pre>
+
+    <h1>Box Model CSS:</h1>
+    <ol>
+        <li><strong>Content:</strong> O conteúdo em si - texto, imagem. Define com width e height</li>
+        <li><strong>Padding:</strong> Espaço interno entre o conteúdo e a borda. Aumenta o tamanho visual, mas ainda faz parte do fundo dele</li>
+        <li><strong>Border:</strong> A borda em volta do padding, pode ter espessura, estilo e cor.</li>
+        <li><strong>Margin:</strong> Espaço externo, entre o elemento e os vizinhos. É transparente. </li>
+    </ol>
+    <pre>
+    ┌──────────────────────────┐
+    │         margin           │
+    │  ┌────────────────────┐  │
+    │  │       border       │  │
+    │  │  ┌──────────────┐  │  │
+    │  │  │   padding    │  │  │
+    │  │  │  ┌────────┐  │  │  │
+    │  │  │  │content │  │  │  │
+    │  │  │  └────────┘  │  │  │
+    │  │  └──────────────┘  │  │
+    │  └────────────────────┘  │
+    └──────────────────────────┘
+    </pre>
+
+    <img src="módulo 1/uploads/1.png" alt="">
+    <img src="módulo 1/uploads/2.png" alt="">
+    <img src="módulo 1/uploads/3.png" alt="">
+
+    <script>
+        alert("Olá Mundo!")
+        confirm("Confirm")
+        prompt("Digite seu nome")
+    </script>
+</body>
+</html>
