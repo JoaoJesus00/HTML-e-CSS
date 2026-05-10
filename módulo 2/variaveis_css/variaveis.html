@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Variáveis CSS</title>
+  <style>
+    :root {
+      --cor-primaria: #3a86ff;
+      --cor-secundaria: #ff006e;
+      --cor-fundo: #e4f0fc;
+      --cor-texto: #333333;
+      --fonte-principal: 'Arial', sans-serif;
+      --raio-borda: 8px;
+      --espacamento: 16px;
+      --sombra: 1px 1px 4px rgba(0, 0, 0, 0.63);
+    }
+
+    body {
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      font-family: var(--fonte-principal);
+      padding: var(--espacamento);
+    }
+
+    h1 {
+      color: var(--cor-primaria);
+    }
+
+    button {
+      background-color: var(--cor-primaria);
+      color: white;
+      border: none;
+      padding: var(--espacamento);
+      border-radius: var(--raio-borda);
+      cursor: pointer;
+      box-shadow: var(--sombra);
+    }
+
+    button.secundario {
+      background-color: var(--cor-secundaria);
+    }
+
+    .card {
+      background-color: white;
+      border-radius: var(--raio-borda);
+      padding: var(--espacamento);
+      border-left: 4px solid var(--cor-primaria);
+      box-shadow: var(--sombra);
+    }
+  </style>
+</head>
+<body>
+  <h1>Título da página</h1>
+
+  <div class="card">
+    <p>Esse card usa as mesmas variáveis do resto do site.</p>
+  </div>
+
+  <br>
+  <button>Botão primário</button>
+  <button class="secundario">Botão secundário</button>
+</body>
+</html>

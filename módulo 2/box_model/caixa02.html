@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            border-radius: 10px;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: gainsboro;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.377);
+        }
+        nav {
+            background-color: rgb(114, 114, 114);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.377);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: gainsboro;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.377);
+        }
+        article {
+            background-color: azure;
+            padding: 2px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.377);
+        }
+        article > aside {
+            background-color: rgb(190, 215, 215);
+        }
+        footer {
+            background-color: darkslategrey;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.377);
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav> <!--Menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>IA vai dominar o mundo?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem veniam, quibusdam ut molestiae voluptate esse facilis harum quis, deserunt modi, amet provident non at voluptatibus? Quidem, at quaerat! Temporibus, non.</p>
+                <aside>
+                    <p>Artigo escrito por Chaves da Silva</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo João</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
